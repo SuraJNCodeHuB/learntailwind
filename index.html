@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            content: ["./src/**/*.{html,js}"],
+            extend: {
+              colors: {
+                golden: '#fdcf00',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+
+
+<body>
+    <h1 class="text-center text-2xl font-bold text-golden mt-4"> Learning Tailwind CSS </h1>
+    <h2>Customize Tailwind CSS</h2>
+    <p class="text-red-500 text-center mt-4 mb-4">I am excited to learn Tailwind CSS.</p>
+
+    <button disabled class="bg-golden p-2 rounded-md hover:bg-black hover:text-golden">Visit Skillup Labs</button>
+    
+</body>
+</html>
